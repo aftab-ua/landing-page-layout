@@ -17,6 +17,14 @@ ul{
     margin: 0;
     padding: 0;
 }
+ul li {
+    padding: 20px 10px;
+}
+ul li a {
+    text-decoration: none;
+    color: #f5f5f6;
+}
+
 .main-nav{
     display: flex;
     font-size: 0.7em;
@@ -28,19 +36,13 @@ ul{
         font-size: 0.5em;
         padding: 0;
     }
-    
 }
-li{
-    padding: 20px;
-}
+
 
 .push{
     margin-left: auto;
 }
-a{
-    text-decoration: none;
-    color: #f5f5f6;
-}
+
 /* cover */
 .container{
     height: 70vh;
@@ -49,7 +51,8 @@ a{
     justify-content: center;
 }
 .covr-pic{
-    width: 26rem;
+    max-width: 100%;
+    height: auto;
 }
 /* projects */
 .grid-wrapper{
@@ -63,7 +66,7 @@ a{
     margin: 20px;
 }
 .grid-wrapper img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     
 }
@@ -96,3 +99,21 @@ footer {
     -o-transform: rotate(-7deg);
     transform: rotate(-7deg);
 }
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container{
+       width: 40rem;
+       margin: auto;
+    }
+ }
